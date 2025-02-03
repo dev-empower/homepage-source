@@ -4,7 +4,6 @@ import heroIllustration from './assets/hero-illustration.svg'
 import locationImage from './assets/images/location.webp'
 import tungImage from './assets/images/tung.webp'
 import duyanhImage from './assets/images/duyanh.webp'
-import ichijoImage from './assets/images/ichijo.webp'
 import logoImage from './assets/images/logo.webp'
 
 function App() {
@@ -373,8 +372,8 @@ function App() {
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: '4rem',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '8rem',
               maxWidth: '1400px',
               margin: '0 auto'
             }}>
@@ -385,7 +384,8 @@ function App() {
                   height: '200px',
                   borderRadius: '50%',
                   overflow: 'hidden',
-                  marginBottom: '2rem'
+                  marginBottom: '2rem',
+                  margin: '0 auto 2rem'
                 }}>
                   <img 
                     src={tungImage} 
@@ -456,7 +456,8 @@ function App() {
                   height: '200px',
                   borderRadius: '50%',
                   overflow: 'hidden',
-                  marginBottom: '2rem'
+                  marginBottom: '2rem',
+                  margin: '0 auto 2rem'
                 }}>
                   <img 
                     src={duyanhImage} 
@@ -517,71 +518,6 @@ function App() {
                   <p style={{ color: 'var(--text-secondary)' }}>
                     新しいことへの挑戦、読書、ゲーム
                   </p>
-                </div>
-              </div>
-
-              {/* 社外取締役 Profile */}
-              <div style={{ textAlign: 'left' }}>
-                <div style={{
-                  width: '200px',
-                  height: '200px',
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                  marginBottom: '2rem'
-                }}>
-                  <img 
-                    src={ichijoImage} 
-                    alt="社外取締役 - 増岡 一歩" 
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover'
-                    }}
-                  />
-                </div>
-                <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>社外取締役</h4>
-                <p style={{ 
-                  fontSize: '1.2rem', 
-                  marginBottom: '0.25rem',
-                  color: 'var(--text)'
-                }}>
-                  マスオカ　イチジョ
-                </p>
-                <p style={{ 
-                  fontSize: '1rem', 
-                  marginBottom: '1.5rem',
-                  color: 'var(--text-secondary)'
-                }}>
-                  増岡 一歩
-                </p>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <h5 style={{ 
-                    fontSize: '1.1rem', 
-                    marginBottom: '0.5rem',
-                    color: 'var(--text)'
-                  }}>得意分野</h5>
-                  <div style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    <div style={{ marginBottom: '1rem' }}>
-                      <h6 style={{ 
-                        fontSize: '1rem', 
-                        marginBottom: '0.5rem',
-                        fontWeight: 'bold'
-                      }}>ビジネス・コンサルティング</h6>
-                      <p>
-                        企業経営及び事業の計画、管理に関するコンサルティングマーケティング及び営業に関するコンサルティング組織及び人材に関するコンサルティングITの企画、設計、開発及び運用に関するコンサルティング。
-                      </p>
-                    </div>
-                    <div>
-                      <h6 style={{ 
-                        fontSize: '1rem', 
-                        marginBottom: '0.5rem',
-                        fontWeight: 'bold'
-                      }}>新規事業開発支援</h6>
-                      <p>
-                        新規事業の立ち上げ、商品及びサービスの市場開拓支援EC及びインターネット事業の開発支援輸出入取引の支援日本企業のベトナム進出支援。
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

@@ -360,7 +360,7 @@ html {
 @media (max-width: 768px) {
   .company-bod > div {
     grid-template-columns: 1fr !important;
-    gap: 3rem !important;
+    gap: 8rem !important;
   }
   
   .company-bod img {
