@@ -325,7 +325,7 @@ function App() {
                 fontSize: '1rem',
                 color: 'var(--text-secondary)'
               }}>
-                <p><strong>会社名：</strong>DevEmpower Joint Stock Company</p>
+                <p><strong>会社名：</strong>DEVEMPOWER COMPANY LIMITED</p>
                 <p><strong>所在地：</strong>A1-1, A2-2 Le Duc Tho, My Dinh, Nam Tu Liem, Ha Noi</p>
                 <p><strong>事業内容：</strong>オフショア開発、ゲームマーケティング、IoT設計・開発</p>
                 <p><strong>創業：</strong>2020年3⽉</p>
