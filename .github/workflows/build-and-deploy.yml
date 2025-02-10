@@ -1,0 +1,46 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if needed
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Backup CNAME file
+        run: |
+          mkdir -p backup
+          if [ -f docs/CNAME ]; then cp docs/CNAME backup/; fi
+
+      - name: Build project
+        run: npm run build
+
+      - name: Copy dist to docs while preserving CNAME
+        run: |
+          rm -rf docs
+          cp -r dist docs
+          if [ -f backup/CNAME ]; then mv backup/CNAME docs/; fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Automated build and update docs (preserving CNAME)"
+          git push
+
+  deploy-github-pages:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
