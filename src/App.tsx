@@ -606,6 +606,10 @@ function App() {
             color: 'var(--text-secondary)',
             fontSize: '0.9rem'
           }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '0.75rem' }}>
+              <a href="./terms.html" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Terms of Service</a>
+              <a href="./privacy.html" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Privacy Policy</a>
+            </div>
             ©2022 DevEmpower LLC
           </div>
         </div>
